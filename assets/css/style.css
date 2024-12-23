@@ -5,13 +5,14 @@ body {
 body .main {
   display: flex;
   padding: 2em;
-  height: 90vh;
+  min-height: 80vh;
   justify-content: center;
   align-items: center;
 }
 body .main .clockbox,
 body .main #clock {
   width: 100%;
+  height: 500px;
   /* Clock styles */
   /* Transparent box ensuring arms center properly. */
   /* Make all arms rotate around the same center point. */
@@ -67,4 +68,28 @@ body .main #clock #hour,
 body .main #clock #minute,
 body .main #clock #second {
   transform-origin: 300px 300px;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+body footer p {
+  color: gray;
+  text-align: center;
+  margin: 0;
+  opacity: 0.7;
+}
+body footer p a {
+  opacity: 0.7;
+}
+body footer a {
+  color: #bdbdbd;
+  text-decoration: none;
+  opacity: 0.5;
+}
+body footer a:hover {
+  color: #ffffff;
 }
